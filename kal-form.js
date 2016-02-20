@@ -8,4 +8,4 @@ return false;return true;}
 function alertContents(){if(http_request.readyState==4){if(http_request.status==200){result=http_request.responseText;document.getElementById('myspan').innerHTML=result;}else{alert('There was a problem with the request.');}}}
 function get(obj){if(document.getElementById("kalender").value=="")
 {alert("Pastikan anda mengisi hari pertama anda mendapatkan menstruasi sebelumnya.");return false;}
-var poststr="lama="+ encodeURI(document.getElementById("lama").value)+"&siklus="+ encodeURI(document.getElementById("siklus").value)+"&kalender="+ encodeURI(document.getElementById("kalender").value);makePOSTRequest('kesuburancalculator.php',poststr);}
+var poststr="lama="+ encodeURI(document.getElementById("lama").value)+"&siklus="+ encodeURI(document.getElementById("siklus").value)+"&kalender="+ encodeURI(document.getElementById("kalender").value);makePOSTRequest('https://cdn.rawgit.com/bloggertereliye/gemasiba/gh-pages/kal-kesuburan.php',poststr);}
